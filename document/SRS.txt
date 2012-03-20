@@ -1,0 +1,16 @@
+                       Requirement Analysis
+   
+1.background
+  With the development of telecommunication,a growing number of people need a special software to communicate with others,and this software must be safe and effctive.It will be a personal tool,so it must be different from other communication software.As we know,QQ is a useful communication software,and we use it almost everyday.But if we were 
+workers,and we must communicate with each other,what we talk about is important and trade secret,we should not use QQ anymore,we need a safe and effctive software.So our group seize opportunities and what we create will face their needs.On the whole,our product will be a trade communicatin software.
+2.name and working environment
+  At last part,we have introduced our software.And its name is Enyblcok.Our program was launched by GaoXiang(PM).And we will provide
+a server to communicate the information.The software can be used in windows and Linux.It will take the time system and security system form OS.
+3.user
+  Maybe many workers will use our product,and they should know English and good at computer .We think that they will communicate with each other at anytime.So we need a large serve to deal with the data.
+4.constraint
+  In this program,we will meet many constraints,the biggest problem is the time.The response time must be less than 0.1s,and the time of exchanging should be less than 0.2s.And the budget of programming is less than buying a server.It will be the second problem.
+5.function 
+  Now,we will introduce the function of our product.Its interface must be simple and clean.We can use it exchange our file and information.When we communicate with each other,the data will be submit to the server,int this part,we will take encryption technology.So will the  receiving part.At last part,we said that we should buy a large server.So the software can exchange a mount of data.You can send a long number less than 32byte.When the requirement changed,our software must adapt it immediately.Like the way of operating and OS changed. We have the special version for different OS.When user exchange the media file,we must think about the media formant.We can exchange all kinds of music,but not for movies. Finally,our product can deal with the bugs and accidents. when you type a lot of words,you should click the save button to save what you type in,so that we can prevent electricity going off.
+6. Configuration
+  In the end,our product can deal with the huge data,so we need a computer with 20G hard disk and 1g installed RAM and 2.0gHZ core 2 Duo processor.And then,our software will run well.
