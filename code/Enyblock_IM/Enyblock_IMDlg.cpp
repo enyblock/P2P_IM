@@ -185,6 +185,10 @@ void CEnyblock_IMDlg::OnLogOn()
 		i++;
 		
 	}
+
+
+	CMESSAGEBOX m_message_box;
+	m_message_box.DoModal();
 	
 }
 

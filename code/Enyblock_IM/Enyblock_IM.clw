@@ -2,23 +2,25 @@
 
 [General Info]
 Version=1
-LastClass=CEnyblock_IMDlg
+LastClass=CMESSAGEBOX
 LastTemplate=CDialog
 NewFileInclude1=#include "stdafx.h"
 NewFileInclude2=#include "Enyblock_IM.h"
 
-ClassCount=5
+ClassCount=6
 Class1=CEnyblock_IMApp
 Class2=CEnyblock_IMDlg
 Class3=CAboutDlg
 
-ResourceCount=4
+ResourceCount=5
 Resource1=IDD_ENYBLOCK_IM_DIALOG
 Resource2=IDR_MAINFRAME
 Class4=loging
-Resource3=IDD_ABOUTBOX
+Resource3=IDD_Register
 Class5=Register
-Resource4=IDD_Register
+Resource4=IDD_ABOUTBOX
+Class6=CMESSAGEBOX
+Resource5=IDD_MESSAGE_BOX
 
 [CLS:CEnyblock_IMApp]
 Type=0
@@ -44,11 +46,12 @@ Filter=D
 [DLG:IDD_ABOUTBOX]
 Type=1
 Class=CAboutDlg
-ControlCount=4
+ControlCount=5
 Control1=IDC_STATIC,static,1342177283
 Control2=IDC_STATIC,static,1342308480
 Control3=IDC_STATIC,static,1342308352
 Control4=IDOK,button,1342373889
+Control5=IDC_STATIC,button,1342177287
 
 [DLG:IDD_ENYBLOCK_IM_DIALOG]
 Type=1
@@ -100,4 +103,25 @@ BaseClass=CDialog
 Filter=D
 LastObject=IDC_BUTTON4
 VirtualFilter=dWC
+
+[DLG:IDD_MESSAGE_BOX]
+Type=1
+Class=CMESSAGEBOX
+ControlCount=8
+Control1=IDC_EDIT1,edit,1352728708
+Control2=IDC_EDIT3,edit,1350631552
+Control3=IDC_STATIC,button,1342177287
+Control4=IDC_STATIC,button,1342177287
+Control5=IDC_BUTTON2,button,1342242816
+Control6=IDC_BUTTON3,button,1342242816
+Control7=IDC_BUTTON6,button,1342242816
+Control8=IDC_BUTTON4,button,1342242816
+
+[CLS:CMESSAGEBOX]
+Type=0
+HeaderFile=MESSAGEBOX.h
+ImplementationFile=MESSAGEBOX.cpp
+BaseClass=CDialog
+Filter=D
+LastObject=CMESSAGEBOX
 

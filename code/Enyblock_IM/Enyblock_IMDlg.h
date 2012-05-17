@@ -12,6 +12,7 @@
 // CEnyblock_IMDlg dialog
 
 #include "Register.h"
+#include "MESSAGEBOX.h"
 
 class CEnyblock_IMDlg : public CDialog
 {

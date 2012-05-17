@@ -6,6 +6,19 @@
 --------------------Configuration: Enyblock_IM - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP506.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Enyblock_IM.pdb" /debug /machine:I386 /out:"Debug/Enyblock_IM.exe" /pdbtype:sept 
+".\Debug\Enyblock_IM.obj"
+".\Debug\Enyblock_IMDlg.obj"
+".\Debug\Register.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Enyblock_IM.res"
+".\Debug\MESSAGEBOX.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP506.tmp"
+<h3>Output Window</h3>
+Linking...
 
 
 
