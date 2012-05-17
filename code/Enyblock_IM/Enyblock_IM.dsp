@@ -102,6 +102,10 @@ SOURCE=.\Enyblock_IMDlg.cpp
 # End Source File
 # Begin Source File
 
+SOURCE=.\MESSAGEBOX.cpp
+# End Source File
+# Begin Source File
+
 SOURCE=.\Register.cpp
 # End Source File
 # Begin Source File
@@ -120,6 +124,10 @@ SOURCE=.\Enyblock_IM.h
 # Begin Source File
 
 SOURCE=.\Enyblock_IMDlg.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\MESSAGEBOX.h
 # End Source File
 # Begin Source File
 
