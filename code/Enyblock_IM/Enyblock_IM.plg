@@ -6,24 +6,21 @@
 --------------------Configuration: Enyblock_IM - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP52C.tmp" with contents
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP937.tmp" with contents
 [
-/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Enyblock_IM.pdb" /debug /machine:I386 /out:"Debug/Enyblock_IM.exe" /pdbtype:sept 
-".\Debug\Enyblock_IM.obj"
-".\Debug\Enyblock_IMDlg.obj"
-".\Debug\Register.obj"
-".\Debug\StdAfx.obj"
-".\Debug\Enyblock_IM.res"
-".\Debug\MESSAGEBOX.obj"
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/Enyblock_IM.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Documents and Settings\Administrator\×ÀÃæ\P2P_IM\code\Enyblock_IM\MESSAGEBOX.cpp"
 ]
-Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP52C.tmp"
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP937.tmp" 
 <h3>Output Window</h3>
-Linking...
+Compiling...
+Skipping... (no relevant changes detected)
+MESSAGEBOX.cpp
 
 
 
 <h3>Results</h3>
-Enyblock_IM.exe - 0 error(s), 0 warning(s)
+MESSAGEBOX.obj - 0 error(s), 0 warning(s)
 </pre>
 </body>
 </html>

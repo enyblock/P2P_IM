@@ -41,6 +41,13 @@ CEnyblock_IMApp theApp;
 
 BOOL CEnyblock_IMApp::InitInstance()
 {
+
+	if(!AfxSocketInit())
+	{
+		AfxMessageBox("¼ÓÔØÌ×½Ó×ÖÊ§°Ü");
+		return FALSE;
+	}
+
 	AfxEnableControlContainer();
 
 	// Standard initialization

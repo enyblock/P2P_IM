@@ -14,21 +14,46 @@
 #include "Register.h"
 #include "MESSAGEBOX.h"
 
+
 class CEnyblock_IMDlg : public CDialog
 {
 // Construction
 public:
 	CEnyblock_IMDlg(CWnd* pParent = NULL);	// standard constructor
+	CString   get_local_ip();
+	int       update_ip(CString ip,CString username);
+	int       log_out(CString username);
+	int       check_loged();
+	int       set_friend();
+	CString   find_friend_ip();
+	CString   find_friend_name();
+
+	CString   find_friend_name_from_fip(CString fip);
+
+	//contact ¥¶¿Ì
+	void      init_tree_contact();
+	void      insert_contact();
+	CDatabase m_db;
+	CRecordset rs;
+
+
+	CStringArray   m_fip;
+	CStringArray   m_fname;
 //	loging my_loging;
 // Dialog Data
 	//{{AFX_DATA(CEnyblock_IMDlg)
 	enum { IDD = IDD_ENYBLOCK_IM_DIALOG };
+	CTreeCtrl	m_contact_tree;
 	CProgressCtrl	m_progress;
 	Register        m_register;
+	CString	m_username;
+	CString	m_password;
 	//}}AFX_DATA
 
 	// ClassWizard generated virtual function overrides
 	//{{AFX_VIRTUAL(CEnyblock_IMDlg)
+	public:
+	virtual BOOL DestroyWindow();
 	protected:
 	virtual void DoDataExchange(CDataExchange* pDX);	// DDX/DDV support
 	//}}AFX_VIRTUAL
@@ -45,6 +70,7 @@ protected:
 	afx_msg HCURSOR OnQueryDragIcon();
 	afx_msg void OnLogOn();
 	afx_msg void OnRegister();
+	afx_msg void OnDblclkTreeContact(NMHDR* pNMHDR, LRESULT* pResult);
 	//}}AFX_MSG
 	DECLARE_MESSAGE_MAP()
 };

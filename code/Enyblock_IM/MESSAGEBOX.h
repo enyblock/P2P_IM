@@ -10,11 +10,34 @@
 /////////////////////////////////////////////////////////////////////////////
 // CMESSAGEBOX dialog
 
+//自定义消息
+#define WM_RECVDATA WM_USER+1
+
+//接收参数
+struct RECVPARAM
+{
+	SOCKET sock;
+	HWND   hwnd;
+};
+
+
+static CString friend_name;
+
 class CMESSAGEBOX : public CDialog
 {
 // Construction
 public:
+	static DWORD WINAPI RecvProc(LPVOID lpParameter);
+	BOOL InitSocket();
 	CMESSAGEBOX(CWnd* pParent = NULL);   // standard constructor
+	void set_ip(CString ip);
+	void get_friend_name(CString fname);
+
+
+	
+	DWORD m_dwIP;
+	CString fip;
+
 
 // Dialog Data
 	//{{AFX_DATA(CMESSAGEBOX)
@@ -26,6 +49,8 @@ public:
 // Overrides
 	// ClassWizard generated virtual function overrides
 	//{{AFX_VIRTUAL(CMESSAGEBOX)
+	public:
+	virtual BOOL DestroyWindow();
 	protected:
 	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV support
 	//}}AFX_VIRTUAL
@@ -35,9 +60,15 @@ protected:
 
 	// Generated message map functions
 	//{{AFX_MSG(CMESSAGEBOX)
-		// NOTE: the ClassWizard will add member functions here
+	virtual BOOL OnInitDialog();
+	afx_msg void OnButtonSend();
+	afx_msg void OnButtonCancle();
+	afx_msg void OnClose();
 	//}}AFX_MSG
+	afx_msg void OnRecvData(WPARAM wParam, LPARAM lParam);
 	DECLARE_MESSAGE_MAP()
+private:
+	SOCKET m_socket;
 };
 
 //{{AFX_INSERT_LOCATION}}

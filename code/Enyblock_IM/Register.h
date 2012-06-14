@@ -15,11 +15,19 @@ class Register : public CDialog
 // Construction
 public:
 	Register(CWnd* pParent = NULL);   // standard constructor
+	int check_register_eidtbox();
+	int check_username_exit();
+	int register_account();
+	CDatabase m_db;
+	CRecordset rs;
 
 // Dialog Data
 	//{{AFX_DATA(Register)
 	enum { IDD = IDD_Register };
-		// NOTE: the ClassWizard will add data members here
+	CString	m_username;
+	CString	m_password;
+	CString	m_password_confirm;
+	CString	m_email;
 	//}}AFX_DATA
 
 
@@ -36,6 +44,7 @@ protected:
 	// Generated message map functions
 	//{{AFX_MSG(Register)
 	afx_msg void OnRegisterCancle();
+	afx_msg void OnRegister();
 	//}}AFX_MSG
 	DECLARE_MESSAGE_MAP()
 };
